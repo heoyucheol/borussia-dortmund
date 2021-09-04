@@ -3,57 +3,103 @@
 <head>
 <title>borussia dortmund</title>
 <meta charset="utf-8">
+<style>
+a {
+  color:black;
+  text-decoration: none;
+}
+#active{
+  color: rgba(255, 200, 0, 100);(0%,100%,50%);
+  -webkit-text-stroke: 1px black;
+
+}
+.saw{
+  color:grey;
+}
+.active{
+  color:red;
+}
+#bundesliga {
+  font-size:85px;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 10px;
+  padding-bottom: 20px;
+  border-bottom: solid 1px grey;
+  margin: 0;
+
+}
+#grid ul{
+font-size: 130%;
+font-weight: bolder;
+  border-right: 1px solid grey;
+  width: 200px;
+  margin-top: 0px;
+  padding-top: 25px;
+  padding-right:30px;
+  padding-bottom: 50px;
+  height: :0px;
+}
+#grid{
+  display:grid;
+  grid-template-columns: 330px 1fr;
+}
+#cheersong{
+  font-weight: 500;
+  margin-right: 100px;
+
+}
+@media(max-width:700px){
+  #bundesliga{
+    font-size: 55px;
+  }
+}
+@media(max-width:1355px){
+  #dortimg{
+    width: 100%;
+  }
+  #cheersong{
+    font-weight: 500;
+    margin-right: 10px;
+}
+@media(max-width:700px){
+  #grid{
+    display:block;
+
+  }
+  #grid ul{
+
+    border-right: none;
+    padding-bottom: 0px;
+}
+}
+}
+@media(max-width:700px){
+  #bundeslogo{
+    width: 55px;
+  }
+}
+</style>
 </head>
 <body>
-<h1><a href="index.html">bundesliga</a></h1>
-<ol>
-<li><a href="1.html"> FC Bayern München</a></li>
-<li><a href="2.html"> RB Leipzig</a></li>
-<li><a href="3.html"> borussia dortmund</a></li>
-</ol>
-<h2><a href="https://www.bvb.de/" target="blank" title="official website">borussia Dortmund</a></h2>
-Olé, jetzt kommt <strong>Der <u>BVB</u></strong><br>
-<p>Im Jahre 1909, da wurd' ein Stern geborn</p> Und man sah sofort an seinem Schein,<br> er kann nur aus Dortmund sein<br> Dieser Stern, der heißt Borussia<br> und er leuchtet in Schwarz-Gelb<br> als schönster Stern von allen dort<br> am großen Himmelszelt.<br> Und sieh hin hinauf zum Firmament<br> auf den Stern, den jeder kennt,<br> spür ich seinen Glanz, dann sag ich mir,<br> er ist auch ein Teil von dir.
-<p><img src="도르트문트.png" width="700"></P>
+<h1 id="bundesliga"><a href="index.html" style="margin-right:20px">Bundesliga</a><img src="분데스리가.jpg" width="80px" style="margin-top:30px;" id="bundeslogo"></h1>
 
-<br><h3>bundesliga points 210901</h3>
-<table border="1" text-align : "center">
-  <tr>
-    <th>team</th>
-    <th>&nbsp;points&nbsp;</th>
-  </tr>
-  <tr>
-    <td>fc Bayern München</td>
-    <td text-align : "center">7</td>
-  </tr>
-  <tr>
-    <td>borussia dortmund</td>
-    <td>6</td>
-  </tr>
-  <tr>
-    <td>rb Leipzig</td>
-    <td>3<td>
-  </tr>
-</table>
-<h3>bundesliga points 210903</h3>
-<p>
-  <table border="1">
-  <tr>
-    <th>team</th>
-    <th>&nbsp;points&nbsp;</th>
-  </tr>
-  <tr>
-    <td>fc Bayern München</td>
-    <td>7</td>
-  </tr>
-  <tr>
-    <td>borussia dortmund</td>
-    <td>6</td>
-  </tr>
-  <tr>
-    <td>rb Leipzig</td>
-    <td>3<td>
-  </tr>
-</table>
-</P>
+<div id="grid">
+<ul style="color:grey;">
+  <p><li><a href="1.html"class="saw"> FC Bayern München</a></li></p>
+  <p><li><a href="2.html"class="saw"> RB Leipzig</a></li></p>
+  <p><li><a href="3.html" class="saw" id="active"> Borussia Dortmund</a></li></p>
+</ul>
+<div>
+  <p><img src="도르트문트.png" width="1000px" style="margin-top:40px;" id="dortimg"></p>
+
+ <h1><a href="https://www.bvb.de/" target="blank" title="official website" style="text-decoration:underline">borussia Dortmund</a></h1>
+    <h2>Olé, jetzt kommt <strong>Der <u>BVB</u></strong></h2>
+<div id=cheersong>
+  Im Jahre 1909, da wurd' ein Stern geborn Und man sah sofort an seinem Schein, er kann nur aus Dortmund sein Dieser Stern, der heißt Borussia und er leuchtet in Schwarz-Gelb als schönster Stern von allen dort am großen Himmelszelt. Und sieh hin hinauf zum Firmament auf den Stern, den jeder kennt, spür ich seinen Glanz, dann sag ich mir, er ist auch ein Teil von dir. Leuchte auf mein stern Borussia, leuchte auf, zeig mir den Weg. ganz egal wohin er uns auch führt, ich werd immer bei dir sein. Leuchte auf mein Stern Borussia, leuchte auf zeig mir den Weg. ganz egal wohin er uns auch führt, ich werd immer beid dir sein. ich werd immer beid dir sein.
+</div>
+</div>
+</div>
+<br>
+
 </body>
