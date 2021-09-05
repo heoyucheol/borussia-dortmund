@@ -9,9 +9,14 @@ a {
   text-decoration: none;
 }
 #active{
-  color: rgba(255, 200, 0, 100);(0%,100%,50%);
-  -webkit-text-stroke: 1px black;
+  color: rgba(255, 180, 0);
 
+}
+.activeul{
+  color: rgba(255,150,0);
+}
+.list3{
+  color: rgba(255, 180, 0);
 }
 .saw{
   color:grey;
@@ -23,83 +28,136 @@ a {
   font-size:85px;
   text-transform: uppercase;
   text-align: center;
-  padding: 10px;
   padding-bottom: 20px;
   border-bottom: solid 1px grey;
-  margin: 0;
+  margin: 0px;
 
 }
 #grid ul{
 font-size: 130%;
-font-weight: bolder;
+font-weight:  600;
   border-right: 1px solid grey;
-  width: 200px;
-  margin-top: 0px;
-  padding-top: 25px;
+  padding-top: 20px;
   padding-right:30px;
   padding-bottom: 50px;
-  height: :0px;
+line-height: 40px;
+margin: 0px;
 }
 #grid{
   display:grid;
-  grid-template-columns: 330px 1fr;
+  grid-template-columns: 305px 1fr;
 }
 #cheersong{
-  font-weight: 500;
-  margin-right: 100px;
+  font-weight: 600;
+  margin-right: 20px;
+}
 
-}
-@media(max-width:700px){
+@media(max-width:800px){
   #bundesliga{
-    font-size: 55px;
+    font-size: 50px;
+    padding-right: 5px;
+    letter-spacing: 0px;
   }
-}
-@media(max-width:1355px){
-  #dortimg{
-    width: 100%;
-  }
-  #cheersong{
-    font-weight: 500;
-    margin-right: 10px;
-}
-@media(max-width:700px){
   #grid{
     display:block;
-
   }
   #grid ul{
-
     border-right: none;
-    padding-bottom: 0px;
+    border-bottom:solid 1px grey;
+    padding-bottom: 10px;
+    padding-top: 10px;
+      line-height: 32px;
+      font-size: 18px;
+      border-width: thin;
+
+  }
+  #bodycopy{
+    text-align: left;
+    margin-left: 0px;
+
+  }
+  #slogan{
+    margin-left: 15px;
+  }
+  #copy{
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  #ofweb{
+    padding-top: 0px;
+    font-size: 26px;
+    font-weight:900;
+  }
+  #dortimg{
+    margin-left: 0px;
+  }
+  #logo{
+    width:47px;
+  }
+
 }
-}
-}
-@media(max-width:700px){
-  #bundeslogo{
-    width: 55px;
+@media(max-width:1200px){
+  #dortimg{
+    width:96%;
   }
 }
+
 </style>
 </head>
 <body>
-<h1 id="bundesliga"><a href="index.html" style="margin-right:20px">Bundesliga</a><img src="분데스리가.jpg" width="80px" style="margin-top:30px;" id="bundeslogo"></h1>
+<div>
+<h1 id="bundesliga"><a href="index.html" style="display:inline; margin-left:">Bundesliga</a><img src="분데스리가.jpg" width="80px;" style="margin-left:15px;"id="logo"></div></h1>
 
 <div id="grid">
 <ul style="color:grey;">
-  <p><li><a href="1.html"class="saw"> FC Bayern München</a></li></p>
-  <p><li><a href="2.html"class="saw"> RB Leipzig</a></li></p>
-  <p><li><a href="3.html" class="saw" id="active"> Borussia Dortmund</a></li></p>
+  <li><a href="1.html"class="saw"> FC Bayern München</a></li>
+  <li><a href="2.html"class="saw"> RB Leipzig</a></li>
+  <li class="list3"><a href="3.html" class="saw" id="active"> Borussia Dortmund</a></li>
 </ul>
 <div>
-  <p><img src="도르트문트.png" width="1000px" style="margin-top:40px;" id="dortimg"></p>
+  <div id= "bodycopy" style="margin-left:30px;">
+  <h1 style="padding-top:14px; margin-top:0px; text-transform: uppercase;"><a href="https://www.bvb.de/" target="blank" title="official website" id="ofweb">-borussia Dortmund </a></h1>
+  <p style="margin-top:0px; padding-top:0px;"><img src="도르트문트.png" width="800px" id="dortimg"></p>
+  <p id="slogan">
+    <h2>-'Olé, jetzt kommt Der BVB'</h2>
+    <h4>- Ballspielverein Borussia 09 e. V. Dortmund,</h4>
+  </div>
+</p>
+<div id="copy" style="margin-right:25px; margin-left:25px;">
+  <p> commonly known as Borussia Dortmund [boˈʁʊsi̯aː ˈdɔɐ̯tmʊnt], BVB, or simply Dortmund, is a German professional sports club based in Dortmund, North Rhine-Westphalia. It is best known for its men's professional football team, which plays in the Bundesliga, the top tier of the German football league system. The club have won eight league championships, five DFB-Pokals, one UEFA Champions League, one Intercontinental Cup, and one UEFA Cup Winners' Cup.</p>
 
- <h1><a href="https://www.bvb.de/" target="blank" title="official website" style="text-decoration:underline">borussia Dortmund</a></h1>
-    <h2>Olé, jetzt kommt <strong>Der <u>BVB</u></strong></h2>
-<div id=cheersong>
-  Im Jahre 1909, da wurd' ein Stern geborn Und man sah sofort an seinem Schein, er kann nur aus Dortmund sein Dieser Stern, der heißt Borussia und er leuchtet in Schwarz-Gelb als schönster Stern von allen dort am großen Himmelszelt. Und sieh hin hinauf zum Firmament auf den Stern, den jeder kennt, spür ich seinen Glanz, dann sag ich mir, er ist auch ein Teil von dir. Leuchte auf mein stern Borussia, leuchte auf, zeig mir den Weg. ganz egal wohin er uns auch führt, ich werd immer bei dir sein. Leuchte auf mein Stern Borussia, leuchte auf zeig mir den Weg. ganz egal wohin er uns auch führt, ich werd immer beid dir sein. ich werd immer beid dir sein.
+<p>Founded in 1909 by eighteen football players from Dortmund, the football team is part of a large membership-based sports club with more than 145,000 members, making Borussia Dortmund the second largest sports club by membership in Germany. The club has active departments in other sports, namely in women's handball. Since 1974, Dortmund have played their home games at Westfalenstadion; the stadium is the largest in Germany, and Dortmund has the highest average attendance of any association football club in the world.</p>
+
+<p>Borussia Dortmund's colours are black and yellow, giving the club its nickname die Schwarzgelben. They hold a long-standing rivalry with Ruhr neighbours Schalke 04, with whom they contest the Revierderby. They also contest Der Klassiker with Bayern Munich.</p>
+
+<p>In terms of Deloitte's annual Football Money League, Dortmund was in 2015 ranked as the second richest sports club in Germany, and the 12th richest football team in the world. Moreover, under the directorship of Michael Zorc in the 2010s, Dortmund have cultivated a reputation for spotting and developing young talent, and have remained focused on developing a youth system. They have also received plaudits for generally adhering to an attacking footballing philosophy.</p>
+
+<h3>- Foundation and early years</h3>
+
+<p>Borussia Dortmund in 1913
+The club was founded on 19 December 1909 by a group of young men unhappy with the Catholic church-sponsored Trinity Youth, where they played football under the stern and unsympathetic eye of the local parish priest. The priest, Father Dewald was blocked at the door when he tried to break up the organising meeting being held in a room of the local pub, Zum Wildschütz. The founders were Franz and Paul Braun, Henry Cleve, Hans Debest, Paul Dziendzielle, Franz, Julius and Wilhelm Jacobi, Hans Kahn, Gustav Müller, Franz Risse, Fritz Schulte, Hans Siebold, August Tönnesmann, Heinrich and Robert Unger, Fritz Weber and Franz Wendt. The name Borussia is Latin for Prussia but was taken from Borussia beer from the nearby Borussia brewery in Dortmund. The team began playing in blue and white striped shirts with a red sash, and black shorts. In 1913, they donned the black and yellow stripes so familiar today.</p>
+
+<p>Over the next decades the club enjoyed only modest success playing in local leagues. They had a brush with bankruptcy in 1929 when an attempt to boost the club's fortunes by signing some paid professional footballers failed miserably and left the team deep in debt. They survived only through the generosity of a local supporter who covered the team's shortfall out of his own pocket.</p>
+
+<p>The 1930s saw the rise of the Third Reich, which restructured sports and football organisations throughout the nation to suit the regime's goals. Borussia's president was replaced when he refused to join the Nazi Party, and a couple of members who surreptitiously used the club's offices to produce anti-Nazi pamphlets were executed in the last days of the war. The club did have greater success in the newly established Gauliga Westfalen, but would have to wait until after World War II to make a breakthrough. It was during this time that Borussia developed its intense rivalry with Schalke 04 of suburban Gelsenkirchen, the most successful side of the era (see Revierderby). Like every other organisation in Germany, Borussia was dissolved by the Allied occupation authorities after the war in an attempt to distance the country's institutions from its so-recent Nazi past. There was a short-lived attempt to merge the club with two others – Werksportgemeinschaft Hoesch and Freier Sportverein 98 – as Sportgemeinschaft Borussia von 1898, but it was as Ballspiel-Verein Borussia (BVB) that they made their first appearance in the national league final in 1949, where they lost 2–3 to VfR Mannheim.</p>
+
+<h3>- First national titles</h3>
+
+<p>Historical chart of Borussia Dortmund league performance after WWII
+Between 1946 and 1963, Borussia featured in the Oberliga West, a first division league which dominated German football through the late 1950s. In 1949, Borussia reached the final in Stuttgart against VfR Mannheim, which they lost 2–3 after extra time. The club claimed its first national title in 1956 with a 4–2 win against Karlsruher SC. One year later, Borussia defeated Hamburger SV 4–1 to win their second national title. After this coup, the three Alfredos (Alfred Preißler, Alfred Kelbassa and Alfred Niepieklo) were legends in Dortmund. In 1963, Borussia won the last edition of the German Football Championship (before the introduction of the new Bundesliga) to secure their third national title.</p>
+
+<h3>- Bundesliga debut</h3>
+<p>In 1962, the DFB met in Dortmund and voted to establish a professional football league in Germany, to begin play in August 1963 as the Bundesliga. Borussia Dortmund earned its place among the first sixteen clubs to play in the league by winning the last pre-Bundesliga national championship. Runners-up 1. FC Köln also earned an automatic berth. Dortmund's Friedhelm Konietzka scored the first-ever Bundesliga goal a minute into the match, which they would eventually lose 2–3 to Werder Bremen.</p>
+
+<p>In 1965, Dortmund captured its first DFB-Pokal. In 1966, Dortmund won the European Cup Winners' Cup 2–1 against Liverpool in extra time, with the goals coming from Sigfried Held and Reinhard Libuda. In the same year, however, the team surrendered a commanding position atop the Bundesliga by losing four of their last five league games and finishing second, three points behind champions 1860 München. Ironically, much of 1860 München's success came on the strength of the play of Konietzka, recently transferred from Dortmund.</p>
+
+<p>The 1970s were characterised by financial problems, relegation from the Bundesliga in 1972, and the opening of the Westfalenstadion, named after its home region Westphalia in 1974. The club earned its return to Bundesliga in 1976.</p>
+
+<p>Dortmund continued to have financial problems through the 1980s. BVB avoided being relegated in 1986 by winning a third decisive playoff game against Fortuna Köln after finishing the regular season in 16th place. Dortmund did not enjoy any significant success again until a 4–1 DFB-Pokal win in 1989 against Werder Bremen. It was Horst Köppel's first trophy as a manager. Dortmund then won the 1989 DFL-Supercup 4–3 against rivals Bayern Munich.</p></div>
 </div>
 </div>
 </div>
-<br>
+
 
 </body>
+</html>
