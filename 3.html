@@ -3,120 +3,22 @@
 <head>
 <title>borussia dortmund</title>
 <meta charset="utf-8">
-<style>
-a {
-  color:black;
-  text-decoration: none;
-}
-#active{
-  color: rgba(255, 180, 0);
-
-}
-.activeul{
-  color: rgba(255,150,0);
-}
-.list3{
-  color: rgba(255, 180, 0);
-}
-.saw{
-  color:grey;
-}
-.active{
-  color:red;
-}
-#bundesliga {
-  font-size:85px;
-  text-transform: uppercase;
-  text-align: center;
-  padding-bottom: 20px;
-  border-bottom: solid 1px grey;
-  margin: 0px;
-
-}
-#grid ul{
-font-size: 130%;
-font-weight:  600;
-  border-right: 1px solid grey;
-  padding-top: 20px;
-  padding-right:30px;
-  padding-bottom: 50px;
-line-height: 40px;
-margin: 0px;
-}
-#grid{
-  display:grid;
-  grid-template-columns: 305px 1fr;
-}
-#cheersong{
-  font-weight: 600;
-  margin-right: 20px;
-}
-
-@media(max-width:800px){
-  #bundesliga{
-    font-size: 50px;
-    padding-right: 5px;
-    letter-spacing: 0px;
-  }
-  #grid{
-    display:block;
-  }
-  #grid ul{
-    border-right: none;
-    border-bottom:solid 1px grey;
-    padding-bottom: 10px;
-    padding-top: 10px;
-      line-height: 32px;
-      font-size: 18px;
-      border-width: thin;
-
-  }
-  #bodycopy{
-    text-align: left;
-    margin-left: 0px;
-
-  }
-  #slogan{
-    margin-left: 15px;
-  }
-  #copy{
-    margin-left: 0px;
-    margin-right: 0px;
-  }
-  #ofweb{
-    padding-top: 0px;
-    font-size: 26px;
-    font-weight:900;
-  }
-  #dortimg{
-    margin-left: 0px;
-  }
-  #logo{
-    width:47px;
-  }
-
-}
-@media(max-width:1200px){
-  #dortimg{
-    width:96%;
-  }
-}
-
-</style>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 <div>
-<h1 id="bundesliga"><a href="index.html" style="display:inline; margin-left:">Bundesliga</a><img src="분데스리가.jpg" width="80px;" style="margin-left:15px;"id="logo"></div></h1>
+<h1 id="bundesliga"><a href="index.html" style="display:inline; ">Bundesliga</a><img src="분데스리가.jpg" width="80px;" style="margin-left:15px;"id="logo"></div></h1>
 
-<div id="grid">
+<div class="type" id="grid">
 <ul style="color:grey;">
   <li><a href="1.html"class="saw"> FC Bayern München</a></li>
   <li><a href="2.html"class="saw"> RB Leipzig</a></li>
-  <li class="list3"><a href="3.html" class="saw" id="active"> Borussia Dortmund</a></li>
+  <li style="color: rgba(255,150,0);">
+    <a href="3.html" class="saw" style="color: rgba(255, 180, 0);"> Borussia Dortmund</a></li>
 </ul>
 <div>
-  <div id= "bodycopy" style="margin-left:30px;">
-  <h1 style="padding-top:14px; margin-top:0px; text-transform: uppercase;"><a href="https://www.bvb.de/" target="blank" title="official website" id="ofweb">-borussia Dortmund </a></h1>
+  <div class="type" id= "bodycopy" style="margin-left:30px;margin-top:10px;">
+  <h1 style="padding-top:14px; margin-top:0px; text-transform: uppercase; margin-top:0px;"><a href="https://www.bvb.de/" target="blank" title="official website" id="ofweb">-borussia Dortmund </a></h1>
   <p style="margin-top:0px; padding-top:0px;"><img src="도르트문트.png" width="800px" id="dortimg"></p>
   <p id="slogan">
     <h2>-'Olé, jetzt kommt Der BVB'</h2>

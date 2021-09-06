@@ -1,0 +1,86 @@
+<style>
+.type{
+  color:black;
+}
+a {
+  color:black;
+  text-decoration: none;
+}
+#bundesliga {
+  font-size:85px;
+  text-transform: uppercase;
+  text-align: center;
+  padding-bottom: 20px;
+  border-bottom: solid 1px grey;
+  margin: 0px;
+
+}
+#grid ul{
+font-size: 130%;
+font-weight:  600;
+  border-right: 1px solid grey;
+  padding-top: 20px;
+  padding-right:30px;
+  padding-bottom: 50px;
+line-height: 40px;
+margin: 0px;
+}
+#grid{
+  display:grid;
+  grid-template-columns: 305px 1fr;
+}
+#cheersong{
+  font-weight: 600;
+  margin-right: 20px;
+}
+
+@media(max-width:800px){
+  #bundesliga{
+    font-size: 50px;
+    padding-right: 5px;
+    letter-spacing: 0px;
+  }
+  #grid{
+    display:block;
+  }
+  #grid ul{
+    border-right: none;
+    border-bottom:solid 1px grey;
+    padding-bottom: 10px;
+    padding-top: 10px;
+      line-height: 32px;
+      font-size: 18px;
+      border-width: thin;
+
+  }
+  #bodycopy{
+    text-align: left;
+    margin-left: 0px;
+
+  }
+  #slogan{
+    margin-left: 15px;
+  }
+  #copy{
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  #ofweb{
+    padding-top: 0px;
+    font-size: 26px;
+    font-weight:900;
+  }
+  #dortimg{
+    margin-left: 0px;
+  }
+  #logo{
+    width:47px;
+  }
+
+}
+@media(max-width:1200px){
+  #dortimg{
+    width:96%;
+  }
+}
+</style>
