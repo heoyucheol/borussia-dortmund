@@ -1,10 +1,118 @@
 <!doctype html>
 <html>
 <head>
-<title>FC Bayern München</title>
+<title>temp</title>
 <meta charset="utf-8">
-<link rel="stylesheet" href="style.css">
-</head>
+<style>
+#sub{
+
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: 1fr ;
+margin:15px;
+padding:15px;
+gap: 30px 10px;
+
+}
+.subpic{
+  display: block;
+  grid-row-start: 1;
+    grid-row-end: 3;
+
+}
+
+.body{
+  margin-left: 10px;
+}
+.saw{
+  color:grey;
+}
+
+a {
+  color:black;
+  text-decoration: none;
+}
+#bundesliga {
+  font-size:85px;
+  text-transform: uppercase;
+  text-align: center;
+  padding-bottom: 20px;
+  border-bottom: solid 1px grey;
+  margin: 0px;
+
+}
+#grid ul{
+font-size: 130%;
+font-weight:  600;
+  border-right: 1px solid grey;
+  padding-top: 20px;
+}
+#grid li{
+  line-height: 40px;
+  margin:0px;
+}
+#grid{
+  display:grid;
+  grid-template-columns: 305px 1fr;
+
+}
+
+@media(max-width:800px){
+  #bundesliga{
+    font-size: 50px;
+    padding-right: 5px;
+    letter-spacing: 0px;
+  }
+  #grid{
+    display:block;
+  }
+  #grid ul{
+    border-right: none;
+    border-bottom: 1px solid grey;
+    padding-bottom: 0px;
+    padding-top: 0px;
+      line-height: 32px;
+      font-size: 15px;
+      text-align: center;
+      font-weight: 600;
+        list-style: none;
+        padding-left: 0px;
+
+  }
+  #grid li{
+  display: inline-block;
+padding-left:10px ;
+padding-right:10px ;
+margin-top: 0px;
+  }
+#expl{
+  padding-left: 0px auto;
+  display: block;
+
+}
+  #slogan{
+    margin-left: 15px;
+  }
+  #copy{
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  #ofweb{
+    padding-top: 0px;
+    font-size: 26px;
+    font-weight:900;
+  }
+
+  #logo{
+    width:47px;
+  }
+  #dortimg{
+    margin-left: 0px;
+  }
+
+}
+
+</style>
 <body>
 <div>
 <h1 id="bundesliga"><a href="index.html" style="display:inline; ">Bundesliga</a><img src="분데스리가.jpg" width="80px;" style="margin-left:15px;"id="logo"></div></h1>
@@ -16,15 +124,19 @@
   <li class="li"><a href="3.html" class="saw"> Borussia Dortmund</a></li>
 </ul>
 
-  <div id="expl">
-  <h1 style="padding-top:18px; margin-left:20px;; text-transform: uppercase; margin-top:0px;"><a href="https://www.bvb.de/" target="blank" title="official website" id="ofweb">- FC Bayern München </a></h1>
-  <p style="margin-top:0px; padding-left:25px;"><img src="바이에른 뮌헨.jpg" width="800px" id="dortimg"></p>
-  <p id="slogan">
-    <h2 style="padding-left:25px;">- MIA, SAN MIA</h2>
-    <h4 style="padding-left:25px;">- Fußball-Club Bayern München e. V.</h4>
+  <div id="sub">
+
+  <div style="margin-top:0px; padding-left:25px; display:inline"><img src="바이에른 뮌헨.jpg" width="100%" id="dortimg"></div>
+
+  <div><img src="뮌헨 엠블렘.jpg" width=25%; class="subpic"><img src="바이에른선수.jpg" width=25% class="subpic">
+</div>
   </div>
-</p>
-<div id="copy" style="margin-right:25px; margin-left:25px;">
+</div>
+
+<div style="margin-right:25px; margin-left:25px;">
+  <div style="padding-left:25px; display:block;">- MIA, SAN MIA</div>
+  <div style="padding-left:25px; display:block;">- Fußball-Club Bayern  München e. V.</div>
+
   <p>commonly known as FC Bayern München (German pronunciation: [ˌɛftseː ˈbaɪɐn ˈmʏnçn̩]), FCB, Bayern Munich, or FC Bayern, is a German professional sports club based in Munich, Bavaria. It is best known for its professional football team, which plays in the Bundesliga, the top tier of the German football league system. Bayern is the most successful club in German football history, having won a record 31 national titles, including nine consecutively since 2013, and 20 national cups, along with numerous European honours.</p>
 
 <p>FC Bayern Munich was founded in 1900 by 11 football players, led by Franz John. Although Bayern won its first national championship in 1932, the club was not selected for the Bundesliga at its inception in 1963. The club had its period of greatest success in the mid-1970s when, under the captaincy of Franz Beckenbauer, it won the European Cup three consecutive times (1974–1976). Overall, Bayern have won six European Cup/UEFA Champions League titles (German record), winning their sixth title in the 2020 final as part of a continental treble, after which it became only the second European club to achieve the continental treble twice. Bayern has also won one UEFA Cup, one European Cup Winners' Cup, two UEFA Super Cups, two FIFA Club World Cups and two Intercontinental Cups, making it one of the most successful European clubs internationally and the only German club to have won both international titles.</p>
@@ -56,8 +168,5 @@
 <p>During the following years, the team was unsuccessful domestically but defended their European title by defeating Leeds United in the 1975 European Cup Final when Roth and Müller secured victory with late goals. "We came back into the game and scored two lucky goals, so in the end, we were the winners, but we were very, very lucky", stated Franz Beckenbauer. Billy Bremner believed the French referee was "very suspicious". Leeds fans then rioted in Paris and were banned from European football for three years. A year later in Glasgow, Saint-Étienne were defeated by another Roth goal and Bayern became the third club to win the trophy in three consecutive years. The final trophy won by Bayern in this era was the Intercontinental Cup, in which they defeated Brazilian club Cruzeiro over two legs. The rest of the decade was a time of change and saw no further titles for Bayern. In 1977, Franz Beckenbauer left for New York Cosmos and, in 1979, Sepp Maier and Uli Hoeneß retired while Gerd Müller joined the Fort Lauderdale Strikers. Bayerndusel was coined during this period as an expression of either contempt or envy about the sometimes narrow and last-minute wins against other teams.</p>
 </div>
 </div>
-</div>
-
-
 </body>
 </html>
