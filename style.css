@@ -1,4 +1,6 @@
-
+#grid .mainimg .emblem .arena .fans{
+  width:100%;
+}
 .fans{
   grid-column: 3/4;
   grid-row: 2/3;
@@ -74,7 +76,7 @@ font-weight:600;
   border-right:1px solid grey;
   padding-top: 20px;
   grid-column: 1/2;
-  grid-row:1/ 7;
+  grid-row:1/8;
 }
 
 #grid li{

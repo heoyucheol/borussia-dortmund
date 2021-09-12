@@ -1,0 +1,125 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>1분코딩 웹사이트 모작</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
+
+.container{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows:40px 120px 50px 30px 100px minmax(1000px, auto);
+margin-left: 100px;
+margin-right: 100px;
+}
+
+.header{
+grid-column: 1/6;
+grid-row: 2/3;
+  text-align: center;
+  border-top: double 5px black;
+
+  height:120px;
+  line-height: 120px;
+  font-size: 50px;
+  font-weight: 700;
+  font-family: 'Gowun Dodum', sans-serif;
+}
+
+  .flexcontainer{
+    display: flex;
+    justify-content: space-evenly;
+    grid-column: 1/6;
+      grid-row: 3/4;
+      font-family: 'Gowun Dodum', sans-serif;
+      font-size: 20px;
+      padding-top:1px;
+      padding-bottom: 1px;
+      border-bottom: 100% black double;
+      border-top: 5px black double;
+      height:40px;
+      line-height: 40px;
+  }
+
+  .sidebar{
+    align-self: auto;
+    grid-column: 1/2;
+    grid-row:5/7;
+    list-style: none;
+    padding:0px;
+    margin: 0px;
+    color:white;
+    font-family: 'Gowun Dodum', sans-serif;
+    font-size: 17px;
+    border-right: 1px solid black;
+  }
+
+  .sidebar li{
+    align-self: auto;
+    grid-column: 1/2;
+    grid-row:4/6;
+    list-style: none;
+  background-color:dimgray;
+  margin-right:15px;
+  }
+  #fcbk{
+    margin-top: 10px;
+  }
+  #tuto{
+    grid-column: 1/2;
+    grid-row: 5/6;
+    color:black;
+    border-top: 1px black solid;
+    border-bottom: 1px black solid;
+    margin-top: 30px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    margin-right: 15px;
+    font-size: 22px;
+  }
+
+  @media(max-width:945px){
+    .sidebar{
+    display: none;
+    }
+    .container{
+    margin-left: 20px;
+    margin-right: 10px;
+      grid-template-rows:30px 80px 50px 30px 100px minmax(1000px, auto);
+  }
+  .header{
+    font-size: 40px;
+    height:80px;
+    line-height: 80px;
+  }
+}
+
+
+</style>
+</head>
+<body>
+  <div class="container">
+
+    <div class="header">1분코딩</div>
+
+<div class="flexcontainer">
+
+        <div>1분코딩</div>
+      <div><튜토리얼></div>
+        <div>아티클</div>
+        <div>제품</div>
+        <div>여기는</div>
+      </div>
+
+<ul class="sidebar">
+    <li id="yutb">유튜브 1분 코딩 </li>
+    <li id="fcbk"> 페이스북 1분 코딩 </li>
+    <h2 id="tuto">최신 튜토리얼</h2>
+  </ul>
+
+
+  </div>
+
+</body>
+</html>
