@@ -156,32 +156,36 @@ font-size: 30px;
 
   grid-column: 2/5;
   grid-row: 5/8;
-  margin-left: 20px;
+  margin-left: 40px;
   margin-top: -14px;
   font-size: 50px;
   font-family: 'Suez One', serif;
 }
-#centerbody{
-  grid-column: 2/5;
-  grid-row: 5/8;
-  font-size: 20px;
-  font-family: 'Noto Serif KR', serif;
-  margin-bottom: 30px;
-}
-
-}
-#bodycopy{
+.bodycopy{
   display: flex;
   justify-content: space-between;
+  align-self: auto;
+  grid-column: 2/5;
+  grid-row: 6/8;
+  font-size: 15px;
+  font-family: 'Noto Serif KR', serif;
+  margin-left:40px;
+  margin-right:40px;
   overflow:hidden;
   text-overflow: ellipsis;
   white-space: normal;
   line-height: 1.2;
-  height:em;
-  text-align: left;
-  word-break:keep-all;
-  font-size: 20px;
+  height:8.9em;
 }
+
+.centercopy{
+  width:48%;
+}
+.centercopytitle{
+  font-size: 25px;
+  padding-bottom: 15px;
+}
+
 
 
   @media(max-width:900px){
@@ -226,8 +230,9 @@ font-size: 30px;
   margin-top: -14px;
   font-size: 20px;
   font-family: 'Suez One', serif;
+  }
 }
-}
+
 
 
 @media(max-width:1250px){
@@ -274,16 +279,16 @@ font-size: 30px;
 <p>이 튜토리얼은 “차세대 CSS 레이아웃” 시리즈의 두번째 포스트입니다.
 혹시 CSS Flex에 대해 잘 모르신다면, 첫번째 포스트 “이번에야말로 CSS Flex를 익혀보자”를 먼저 읽고 오시는걸 추천드립니다! Flex랑 Grid가 겹치는 부분이 좀 있어서, Flex를 알면 더 수월하게 공부할 수 있거든요~ (어차피 둘 다 알아야 해요</p>
   </div>
-  <div class="fresh">FRESH ARTICLES
-<div id="bodycopy">
-      <div>canvas로 경이로운 소문 융의 땅 만들기
+  <div class="fresh">FRESH ARTICLES</div>
+<div class="bodycopy">
+      <div class="centercopy"><div class="centercopytitle">canvas로 경이로운 소문 융의 땅 만들기</div>
     1월에 유튜브에 올렸던 영상인데, 글이 조금 늦었네요~
     Canvas를 이용해 드라마 경이로운 소문의 융의 땅을 만들어 봅니다. 융의 땅이 뭔지 모르셔도 그냥 저런 빛 움직임을 만드는 강의라고 생각하고 보시면 됩니다.
 
     외부 라이브러리를 사용하지 않고 오로지 Canvas 자체의 API만 가지고 진행하니, 평소 Canvas로 애니메이션과 그래픽 구현을 어떤 식으로 하는지 궁금하셨던 분들은 보시면 좋을 것 같아요</div>
-  <div>이번에야말로 CSS Grid를 익혀보자
+  <div class="centercopy"><div class="centercopytitle">이번에야말로 CSS Grid를 익혀보자</div>
   이 튜토리얼은 “차세대 CSS 레이아웃” 시리즈의 두번째 포스트입니다.
-  혹시 CSS Flex에 대해 잘 모르신다면, 첫번째 포스트 “이번에야말로 CSS Flex를 익혀보자”를 먼저 읽고 오시는걸 추천드립니다! Flex랑 Grid가 겹치는 부분이 좀 있어서, Flex를 알면 더 수월하게 공부할 수 있거든요~ (어차피 둘 다 알아야 해요</div></div></div>
+  혹시 CSS Flex에 대해 잘 모르신다면, 첫번째 포스트 “이번에야말로 CSS Flex를 익혀보자”를 먼저 읽고 오시는걸 추천드립니다! Flex랑 Grid가 겹치는 부분이 좀 있어서, Flex를 알면 더 수월하게 공부할 수 있거든요~ (어차피 둘 다 알아야 해요</div></div>
 
 </div>
 
