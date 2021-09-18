@@ -13,13 +13,21 @@
 body{
   background-color:whitesmoke;
 }
+.date{
+  grid-column: 5/6;
+  grid-row: 1/2;
+  align-self: center;
+  text-align: right;
+  font-family: 'Gowun Dodum', sans-serif;
+  font-weight: 600;
+}
 
 .container{
   display: grid;
-  grid-template-columns: 0.9fr 1.1fr 1fr 1.1fr 0.9fr;
-  grid-template-rows:40px 120px 50px 30px 100px 45px minmax(1000px, auto);
-margin-left: 100px;
-margin-right: 100px;
+  grid-template-columns: 0.83fr 1.17fr 1fr 1.17fr 0.83fr;
+  grid-template-rows:35px 135px 50px 30px 100px 45px minmax(1000px, auto) ;
+margin-left: 80px;
+margin-right: 80px;
 }
 
 .header{
@@ -48,6 +56,7 @@ grid-row: 2/3;
       height:40px;
       line-height: 40px;
   }
+
 
   .lsidebar{
     align-self: auto;
@@ -121,22 +130,25 @@ grid-row: 2/3;
     text-align: left;
     word-break:keep-all;
   }
-  .coffee{
 
-    font-family: 'Anton', sans-serif;
-      border:2px black solid;
-      padding:27px;
-      padding-left: 60px;
-          padding-right: 60px;
-      font-size: 20px;
-  }
-  .forall{
-border: 1px solid black;
-font-family: 'Anton', sans-serif;
-border:2px black solid;
-padding:20px;
 
+  .fa1{
+    grid-column: 1/2;
+    grid-row: 1/3;
+    font-size: 35px;
+      font-family: 'Anton', sans-serif;
+      letter-spacing: 4px;
   }
+  .fa2{
+    grid-column: 2/3;
+    grid-row: 1/3;
+    font-size: 35px;
+      font-family: 'Anton', sans-serif;
+      letter-spacing: 4px;
+  }
+
+
+
 .headerflex{
   border-top: double 5px grey;
   display: flex;
@@ -145,44 +157,121 @@ padding:20px;
     justify-content: space-between;
     align-items: center;
 }
-P{
-display: inline;
-font-size: 30px;
+.forall{
+  display: grid;
+justify-content: center;
+  grid-template-columns: fr 0.5fr 1.5fr;
+  grid-template-rows: 1fr 1fr;
+  align-items: center;
+  padding-left: 0px;
+    padding-right: 0px;
+    border:2px black solid;
+    width:240px;
+    height: 90px;
+    margin-right: 0px;
+}
+.cp1{
+  grid-column: 3;
+  grid-row: 1;
+  text-align: left;
+letter-spacing: 3px;
+  font-family: 'Anton', sans-serif;
+align-self: end;
+line-height: 1;
+}
+.cp2{
+letter-spacing: 3px;
+  font-family: 'Anton', sans-serif;
+  align-self: start;
+    text-align: left;
+    line-height: 1;
+}
+.coffee{
+  display: flex;
+  align-items: center;
+justify-content: center;
+  font-family: 'Anton', sans-serif;
+    border:2px black solid;
+    font-size: 18px;
+    width:240px;
+    height: 90px;
+    margin-right: 0px;
 }
 .coffeepic{
   display: inline;
   vertical-align: middle;
   margin-right:5px;
+  width:12%;
 }
+
+P{
+display: block;
+font-size: 17px;
+  font-family: 'Noto Serif KR', serif;
+  font-weight: 300;
+  margin-top: 7px;
+    margin-bottom: 7px;
+  letter-spacing: 0px;
+
+}
+
 .fresh{
 
   grid-column: 2/5;
   grid-row: 5/8;
   margin-left: 40px;
-  margin-top: -14px;
+  margin-top: -7px;
   font-size: 50px;
   font-family: 'Suez One', serif;
 }
 .bodycopy{
   display: flex;
   justify-content: space-between;
-  align-self: auto;
+  align-items: flex-start;
   grid-column: 2/5;
   grid-row: 5/8;
   font-size: 18px;
   font-family: 'Noto Serif KR', serif;
   margin-left:40px;
   margin-right:40px;
-  margin-top: 70px;
+  margin-top: 80px;
 }
 
-.centercopy{
-  width:48%;5
+#centercopy{
+width: 100%;
+display:block;
+  font-size: 18px;
+  font-weight: 400;
+    word-break:keep-all;
+  text-align: justify;
+  font-family: 'Noto Serif KR', serif;
+  letter-spacing: 0;
+  overflow: hidden;
+text-overflow: ellipsis;
+  display: -webkit-box;
+  line-height: 25px;
+  max-height: 125px;
+  -webkit-line-clamp:8;
+  -webkit-boxprient: vertical;
 }
-.centercopytitle{
-  font-size: 27px;
+
+.centercanvas{
+  display: block;
+  font-size: 30px;
   padding-bottom: 15px;
   font-weight: bolder;
+  width:48%;
+  letter-spacing: -2px;
+  word-break:keep-all;
+}
+.centercssgrid{
+  display: block;
+  font-size: 30px;
+  padding-bottom: 15px;
+  font-weight: bolder;
+  width:48%;
+  letter-spacing: -2px;
+    word-break:keep-all;
 }
 .poster{
   grid-column: 5/6;
@@ -204,103 +293,286 @@ margin-left: 20px;
   font-size: 15px;
   margin-top: 10px;
 }
-
-
-
-
-  @media(max-width:950px){
-    .lsidebar{
-    display: none;
-    }
-    .rsidebar{
-    display: none;
-    }
-    .container{
-    margin-left: 20px;
-    margin-right: 10px;
-      grid-template-rows:30px 80px 50px 30px 100px minmax(1000px, auto);
-  }
-  .header{
-    font-size: 30px;
-    height:80px;
-    line-height: 80px;
-  }
-  .tuto{
-    display: none;
-  }
-  .coffee{
-    display: none;
-  }
-  .forall{
-    display: none;
-  }
-  .headerflex{
-    border-top: double 5px grey;
-    display: flex;
-    grid-column: 1/6;
-      grid-row: 2/3;
-      justify-content: center;
-      align-items: center;
-}
-.fresh{
-  display: flex;
-  grid-column: 1/6;
-  grid-row: 5/8;
-  margin-left: 10px;
+.class{
+  grid-column:2/5;
+  grid-row: 8/9;
+  margin-left:25px;
   margin-top: 0px;
-  font-size: 50px;
-  font-family: 'Suez One', serif;
-  }
-.poster{
-  display: none;
+  font-size: 20px;
+  font-family: 'Gowun Dodum', sans-serif;
+  font-weight: 600;
 }
-.bodycopy{
-  display: flex;
-  align-content: space-between;
-  flex-wrap: wrap;
-  text-align: left;
-  grid-column: 1/6;
-  grid-row: 5/8;
-  font-size: 18px;
-  font-family: 'Noto Serif KR', serif;
-  margin-left:10px;
-  margin-right:0px;
-  margin-top: 70px;
-}
-.container{
-  display: grid;
-  grid-template-columns: 0.9fr 1.1fr 1fr 1.1fr 0.9fr;
-  grid-template-rows:20px 80px 50px 30px 100px 45px 250px minmax(1000px, auto);
-margin-left: 100px;
-margin-right: 100px;
-}
-  .tutotitle{
-display: none;
-  }
-  .centercopy{
-    width:100%;
-  }
+.omcd{
+
 }
 
-
-
-
-@media(max-width:1250px){
+@media(max-width:1600px){
   .container{
 
   margin-left: 15px;
   margin-right: 15px;
   }
 }
+@media(max-width:1400px){
+  P{
+  display: block;
+  font-size: 15px;
+    font-family: 'Noto Serif KR', serif;
+    font-weight: 300;
+    margin-top: 7px;
+      margin-bottom: 7px;
+    letter-spacing: 0px;
+  }
+
+  .fresh{
+display: block;
+    grid-column: 2/5;
+    grid-row: 5/8;
+    margin-left: 25px;
+    margin-top: -7px;
+    font-size: 40px;
+    font-family: 'Suez One', serif;
+  }
+  .bodycopy{
+    flex-wrap: wrap;
+    text-align: left;
+    grid-column: 2/5;
+    grid-row: 5/8;
+    font-size: 18px;
+    font-family: 'Noto Serif KR', serif;
+    margin-left:25px;
+    margin-right:25px;
+    margin-top: 70px;
+  }
+  .centercanvas{
+    display: block;
+    font-size: 24px;
+    padding-bottom: 15px;
+    font-weight: bolder;
+    width:48%;
+    letter-spacing: -2px;
+    word-break:keep-all;
+    margin-left: 0px;
+  }
+  .centercssgrid{
+    display: block;
+    font-size: 24px;
+
+    padding-bottom: 15px;
+    font-weight: bolder;
+    width:48%;
+    letter-spacing: -2px;
+      word-break:keep-all;
+  }
+  #centercopy{
+  width: 100%;
+  display:block;
+    font-size: 15px;
+    font-weight: 400;
+      word-break:keep-all;
+    text-align: justify;
+    font-family: 'Noto Serif KR', serif;
+    letter-spacing: 0;
+    overflow: hidden;
+  text-overflow: ellipsis;
+    display: -webkit-box;
+    line-height: 25px;
+    max-height: 125px;
+    -webkit-line-clamp:8;
+    -webkit-boxprient: vertical;
+  }
+}
+@media(max-width:1200px){
+  .tuto{
+    display: none;
+  }
+    .poster{
+    display: none;
+    }
+    .lsidebar{
+    display: none;
+    }
+    .rsidebar{
+    display: none;
+    }
+    .tutotitle{
+display: none;
+    }
+    .tutotitle p{
+    display: none;
+    }
+    .centercanvas{
+      display: block;
+      font-size: 24px;
+      padding-bottom: 30px;
+      font-weight: bolder;
+      width:100%;
+    }
+    .centercssgrid{
+      display: block;
+      font-size: 24px;
+      padding-bottom: 15px;
+      font-weight: bolder;
+      width:100%;
+    }
+    .bodycopy{
+      flex-wrap: wrap;
+      text-align: left;
+      grid-column: 1/6;
+      grid-row: 5/7;
+      font-family: 'Noto Serif KR', serif;
+      margin-left:25px;
+      margin-right:25px;
+      margin-top: 70px;
+    }
+    .fresh{
+    display: block;
+      grid-column: 1/6;
+      grid-row: 5/8;
+      margin-left:25px;
+      margin-top: -7px;
+      font-size: 40px;
+      font-family: 'Suez One', serif;
+    }
+    #centercopy{
+    width: 100%;
+    display:block;
+      font-size: 16px;
+      font-weight: 400;
+        word-break:keep-all;
+      text-align: justify;
+      font-family: 'Noto Serif KR', serif;
+      letter-spacing: 0;
+      overflow: hidden;
+    text-overflow: ellipsis;
+      display: -webkit-box;
+      line-height: 25px;
+      max-height: 125px;
+      -webkit-line-clamp:8;
+      -webkit-boxprient: vertical;
+    }
+}
+
+@media(max-width:900px){
+  .lsidebar{
+  display: none;
+  }
+  .rsidebar{
+  display: none;
+  }
+  .container{
+  margin-left: 20px;
+  margin-right: 10px;
+    grid-template-rows:30px 80px 50px 30px 100px minmax(1000px, auto);
+}
+.header{
+  font-size: 30px;
+  height:80px;
+  line-height: 80px;
+}
+.tuto{
+  display: none;
+}
+.coffee{
+  display: none;
+}
+.forall{
+  display: none;
+}
+.headerflex{
+  border-top: double 5px grey;
+  display: flex;
+  grid-column: 1/6;
+    grid-row: 2/3;
+    justify-content: center;
+    align-items: center;
+}
+
+.poster{
+display: none;
+}
+
+.container{
+display: grid;
+grid-template-columns: 0.9fr 1.1fr 1fr 1.1fr 0.9fr;
+grid-template-rows:20px 80px 50px 30px 100px 45px 250px minmax(1000px, auto);
+margin-left: 20px;
+margin-right: 20px;
+}
+.tutotitle{
+display: none;
+}
+.centercanvas{
+  display: block;
+  font-size: 24px;
+  padding-bottom: 30px;
+  font-weight: bolder;
+  width:100%;
+}
+.centercssgrid{
+  display: block;
+  font-size: 24px;
+  padding-bottom: 15px;
+  font-weight: bolder;
+  width:100%;
+}
+.bodycopy{
+  flex-wrap: wrap;
+  text-align: left;
+  grid-column: 1/6;
+  grid-row: 5/8;
+  font-size: 18px;
+  font-family: 'Noto Serif KR', serif;
+  margin-left:25px;
+  margin-right:25px;
+  margin-top: 70px;
+}
+.fresh{
+display: block;
+  grid-column: 1/6;
+  grid-row: 5/8;
+  margin-left:25px;
+  margin-top: -7px;
+  font-size: 40px;
+  font-family: 'Suez One', serif;
+}
+#centercopy{
+width: 100%;
+display:block;
+  font-size: 16px;
+  font-weight: 400;
+    word-break:keep-all;
+  text-align: justify;
+  font-family: 'Noto Serif KR', serif;
+  letter-spacing: 0;
+  overflow: hidden;
+text-overflow: ellipsis;
+  display: -webkit-box;
+  line-height: 25px;
+  max-height: 125px;
+  -webkit-line-clamp:8;
+  -webkit-boxprient: vertical;
+}
+}
+
 </style>
 </head>
 <body>
-  <div class="container">
 
+  <div class="container">
+<div class="date">2021-09-18</div>
 <div class="headerflex">
-    <div class="forall"><P>FOR ALL</P> creative peaple</div>
+  <div class="forall">
+  <div class="fa1">For</div>
+    <div class="fa2">All</div>
+  <div class="cp1">CREATIVE</div>
+  <div class="cp2">PEAPLE</div>
+  </div>
     <div class="header">1분코딩</div>
-    <div class="coffee"><img src="coffeepic.svg" width=15px; class="coffeepic">BUY ME A COFFEE</div>
+    <div>
+    <div class="coffee"><img src="coffeepic.svg" width=15px; class="coffeepic"><div>BUY ME A COFFEE</div></div>
+
+  </div>
 
 
   </div>
@@ -330,19 +602,23 @@ display: none;
 혹시 CSS Flex에 대해 잘 모르신다면, 첫번째 포스트 “이번에야말로 CSS Flex를 익혀보자”를 먼저 읽고 오시는걸 추천드립니다! Flex랑 Grid가 겹치는 부분이 좀 있어서, Flex를 알면 더 수월하게 공부할 수 있거든요~ (어차피 둘 다 알아야 해요</p>
   </div>
   <div class="fresh">FRESH ARTICLES</div>
-<div class="bodycopy">
-      <div class="centercopy"><div class="centercopytitle">canvas로 경이로운 소문 융의 땅 만들기</div>
-    1월에 유튜브에 올렸던 영상인데, 글이 조금 늦었네요~
-    Canvas를 이용해 드라마 경이로운 소문의 융의 땅을 만들어 봅니다. 융의 땅이 뭔지 모르셔도 그냥 저런 빛 움직임을 만드는 강의라고 생각하고 보시면 됩니다.
+<section class="bodycopy">
+  <div class="centercanvas">canvas로 경이로운 소문 융의 땅 만들기  <p>2021-09-05</p>  <div id="centercopy">
+  1월에 유튜브에 올렸던 영상인데, 글이 조금 늦었네요~
+  Canvas를 이용해 드라마 경이로운 소문의 융의 땅을 만들어 봅니다. 융의 땅이 뭔지 모르셔도 그냥 저런 빛 움직임을 만드는 강의라고 생각하고 보시면 됩니다.
 
-    외부 라이브러리를 사용하지 않고 오로지 Canvas 자체의 API만 가지고 진행하니, 평소 Canvas로 애니메이션과 그래픽 구현을 어떤 식으로 하는지 궁금하셨던 분들은 보시면 좋을 것 같아요</div>
-  <div class="centercopy"><div class="centercopytitle">이번에야말로 CSS Grid를 익혀보자</div>
-  이 튜토리얼은 “차세대 CSS 레이아웃” 시리즈의 두번째 포스트입니다.
-  혹시 CSS Flex에 대해 잘 모르신다면, 첫번째 포스트 “이번에야말로 CSS Flex를 익혀보자”를 먼저 읽고 오시는걸 추천드립니다! Flex랑 Grid가 겹치는 부분이 좀 있어서, Flex를 알면 더 수월하게 공부할 수 있거든요~ (어차피 둘 다 알아야 해요</div></div>
+  외부 라이브러리를 사용하지 않고 오로지 Canvas 자체의 API만 가지고 진행하니, 평소 Canvas로 애니메이션과 그래픽 구현을 어떤 식으로 하는지 궁금하셨던 분들은 보시면 좋을 것 같아요</div></div>
 
+    <div class="centercssgrid">개발을 시작하고, 강의를 하게 된 이야기  <p>2021-09-18</p><div id="centercopy">
+
+    이 튜토리얼은 “차세대 CSS 레이아웃” 시리즈의 두번째 포스트입니다.
+    혹시 CSS Flex에 대해 잘 모르신다면, 첫번째 포스트 “이번에야말로 CSS Flex를 익혀보자”를 먼저 읽고 오시는걸 추천드립니다! Flex랑 Grid가 겹치는 부분이 좀 있어서, Flex를 알면 더 수월하게 공부할 수 있거든요~ (어차피 둘 다 알아야 해요</div></div>
+
+  </section>
+<div class="omcd">1분코딩 →</div>
   <figure  class="poster"><img src="poster-online.jpg" width=100%; id="wanted">
     <figcaption class="postercap">Oh! 감탄사가 나오는 역동적인 인터랙티브 웹사이트 만들기 온라인 강좌 시리즈. 수강평을 확인해보세요 :)</figcaption>
-    <figure>
+  </figure>
 
 
 </div>
