@@ -9,14 +9,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Suez+One&display=swap');
-html{
-  line-height: 1.4;
-}
+
 body{
   background-color:whitesmoke;
 }
 .date{
-  grid-column: 4/6;
+  grid-column: 5/6;
   grid-row: 1/2;
   align-self: center;
   text-align: right;
@@ -162,13 +160,13 @@ grid-row: 2/3;
 .forall{
   display: grid;
 justify-content: center;
-  grid-template-columns: fr 0.5fr 2fr;
+  grid-template-columns: fr 0.5fr 1.5fr;
   grid-template-rows: 1fr 1fr;
   align-items: center;
   padding-left: 0px;
     padding-right: 0px;
     border:2px black solid;
-    width:20%;
+    width:240px;
     height: 90px;
     margin-right: 0px;
 }
@@ -195,7 +193,7 @@ justify-content: center;
   font-family: 'Anton', sans-serif;
     border:2px black solid;
     font-size: 18px;
-    width:20%;
+    width:240px;
     height: 90px;
     margin-right: 0px;
 }
@@ -203,7 +201,7 @@ justify-content: center;
   display: inline;
   vertical-align: middle;
   margin-right:5px;
-  width:7%;
+  width:12%;
 }
 
 P{
@@ -221,34 +219,28 @@ font-size: 17px;
 
   grid-column: 2/5;
   grid-row: 5/8;
-  margin-left: 0px;
+  margin-left: 40px;
   margin-top: -7px;
   font-size: 50px;
   font-family: 'Suez One', serif;
 }
 .bodycopy{
-
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
   grid-column: 2/5;
   grid-row: 5/8;
   font-size: 18px;
   font-family: 'Noto Serif KR', serif;
   margin-left:40px;
   margin-right:40px;
-  margin-top: 0px;
-
-
+  margin-top: 80px;
 }
-.centerflex{
-  display: flex;
-  justify-content: space-between;
-  width:100%;
-}
-
 
 #centercopy{
 width: 100%;
 display:block;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 400;
     word-break:keep-all;
   text-align: justify;
@@ -265,7 +257,7 @@ text-overflow: ellipsis;
 
 .centercanvas{
   display: block;
-  font-size: 27px;
+  font-size: 30px;
   padding-bottom: 15px;
   font-weight: bolder;
   width:48%;
@@ -274,7 +266,7 @@ text-overflow: ellipsis;
 }
 .centercssgrid{
   display: block;
-  font-size: 27px;
+  font-size: 30px;
   padding-bottom: 15px;
   font-weight: bolder;
   width:48%;
@@ -310,45 +302,9 @@ margin-left: 20px;
   font-family: 'Gowun Dodum', sans-serif;
   font-weight: 600;
 }
-.onemin-coding-title{
-  grid-column: 2/5;
-  grid-row: 5/7;
-  border-top:1px solid black;
-    border-bottom:1px solid black;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-h5{
-  margin-top: 5px;
-  margin-bottom: 5px;
-    font-family: 'Gowun Dodum', sans-serif;
-    font-size: 18px;
-}
-.onemin_flex{
-display: flex;
-justify-content: space-between;
-grid-column: 2/5;
-height: 50%;
-margin:0 -1rem;
-}
+.omcd{
 
-.img{
-background-repeat: no-repeat;
-background-position: center;
-background-size: cover;
-width:100%;
-margin-bottom: 0.5rem;
-padding-bottom: 100%
 }
-
-.onemin_caption{
-  font-size: 0.85rem;
-  margin: 0px;
-  width:100%;
-  padding:0 1rem;
-  line-height: 1.4;
-}
-
 
 @media(max-width:1600px){
   .container{
@@ -372,7 +328,7 @@ padding-bottom: 100%
 display: block;
     grid-column: 2/5;
     grid-row: 5/8;
-    margin-left: 0px;
+    margin-left: 25px;
     margin-top: -7px;
     font-size: 40px;
     font-family: 'Suez One', serif;
@@ -386,7 +342,7 @@ display: block;
     font-family: 'Noto Serif KR', serif;
     margin-left:25px;
     margin-right:25px;
-    margin-top: 0px;
+    margin-top: 70px;
   }
   .centercanvas{
     display: block;
@@ -425,12 +381,6 @@ display: block;
     -webkit-line-clamp:8;
     -webkit-boxprient: vertical;
   }
-  h5{
-    margin-top: 5px;
-    margin-bottom: 5px;
-      font-family: 'Gowun Dodum', sans-serif;
-      font-size: 17px;
-  }
 }
 @media(max-width:1200px){
   .tuto{
@@ -456,28 +406,30 @@ display: none;
       font-size: 24px;
       padding-bottom: 30px;
       font-weight: bolder;
-      width:48%;
+      width:100%;
     }
     .centercssgrid{
       display: block;
       font-size: 24px;
       padding-bottom: 15px;
       font-weight: bolder;
-      width:48%;
+      width:100%;
     }
     .bodycopy{
+      flex-wrap: wrap;
+      text-align: left;
       grid-column: 1/6;
       grid-row: 5/7;
       font-family: 'Noto Serif KR', serif;
-      margin-left:0px;
-      margin-right:0px;
-      margin-top: 0px;
+      margin-left:25px;
+      margin-right:25px;
+      margin-top: 70px;
     }
     .fresh{
     display: block;
       grid-column: 1/6;
       grid-row: 5/8;
-      margin-left:0px;
+      margin-left:25px;
       margin-top: -7px;
       font-size: 40px;
       font-family: 'Suez One', serif;
@@ -485,7 +437,7 @@ display: none;
     #centercopy{
     width: 100%;
     display:block;
-      font-size: 15px;
+      font-size: 16px;
       font-weight: 400;
         word-break:keep-all;
       text-align: justify;
@@ -498,82 +450,6 @@ display: none;
       max-height: 125px;
       -webkit-line-clamp:8;
       -webkit-boxprient: vertical;
-    }
-    .date{
-  font-size: 13px;
-    }
-    h5{
-      margin-top: 5px;
-      margin-bottom: 5px;
-        font-family: 'Gowun Dodum', sans-serif;
-        font-size: 16px;
-    }
-    .fa1{
-      grid-column: 1/2;
-      grid-row: 1/3;
-      font-size: 25px;
-        font-family: 'Anton', sans-serif;
-        letter-spacing: 2px;
-    }
-    .fa2{
-      grid-column: 2/3;
-      grid-row: 1/3;
-      font-size: 25px;
-        font-family: 'Anton', sans-serif;
-        letter-spacing: 2px;
-    }
-    .cp1{
-      grid-column: 3;
-      grid-row: 1;
-      text-align: left;
-    letter-spacing: 1.5px;
-      font-family: 'Anton', sans-serif;
-    align-self: end;
-    line-height: 1;
-  font-size: 12px;
-    }
-    .cp2{
-    letter-spacing: 1.5px;
-      font-family: 'Anton', sans-serif;
-      align-self: start;
-        text-align: left;
-        line-height: 1;
-  font-size: 12px;
-    }
-    .onemin-coding-title{
-      grid-column: 2/5;
-      grid-row: 5/7;
-      border-top:1px solid black;
-        border-bottom:1px solid black;
-        margin-top: 20px;
-        margin-bottom: 20px;
-        margin-left: 0px;
-        margin-right: 0px;
-    }
-    .onemin_flex{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content:flex-start;
-    grid-column: 1/6;
-    width:100%;
-margin-right:0 -1rem;
-    }
-
-    .img{
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    width:100%;
-
-    padding-bottom: 100%;
-
-    }
-
-    .onemin_caption{
-      font-size: 0.85rem;
-      margin: 0px;
-      width:30%;
-      line-height: 1.4;
     }
 }
 
@@ -620,8 +496,8 @@ display: none;
 display: grid;
 grid-template-columns: 0.9fr 1.1fr 1fr 1.1fr 0.9fr;
 grid-template-rows:20px 80px 50px 30px 100px 45px 250px minmax(1000px, auto);
-margin-left: 10px;
-margin-right: 10px;
+margin-left: 20px;
+margin-right: 20px;
 }
 .tutotitle{
 display: none;
@@ -647,15 +523,15 @@ display: none;
   grid-row: 5/8;
   font-size: 18px;
   font-family: 'Noto Serif KR', serif;
-  margin-left:10px;
-  margin-right:10px;
-  margin-top: 0px;
+  margin-left:25px;
+  margin-right:25px;
+  margin-top: 70px;
 }
 .fresh{
 display: block;
   grid-column: 1/6;
   grid-row: 5/8;
-  margin-left:0px;
+  margin-left:25px;
   margin-top: -7px;
   font-size: 40px;
   font-family: 'Suez One', serif;
@@ -677,12 +553,6 @@ text-overflow: ellipsis;
   -webkit-line-clamp:8;
   -webkit-boxprient: vertical;
 }
-.centerflex{
-  display: flex;
-  flex-direction: column;
-  width:100%;
-}
-
 }
 
 </style>
@@ -699,9 +569,8 @@ text-overflow: ellipsis;
   <div class="cp2">PEAPLE</div>
   </div>
     <div class="header">1분코딩</div>
-    <div class="coffee">
-    <img src="coffeepic.svg" width=15px; class="coffeepic">
-    <div>BUY ME A COFFEE</div>
+    <div>
+    <div class="coffee"><img src="coffeepic.svg" width=15px; class="coffeepic"><div>BUY ME A COFFEE</div></div>
 
   </div>
 
@@ -732,57 +601,21 @@ text-overflow: ellipsis;
 <p>이 튜토리얼은 “차세대 CSS 레이아웃” 시리즈의 두번째 포스트입니다.
 혹시 CSS Flex에 대해 잘 모르신다면, 첫번째 포스트 “이번에야말로 CSS Flex를 익혀보자”를 먼저 읽고 오시는걸 추천드립니다! Flex랑 Grid가 겹치는 부분이 좀 있어서, Flex를 알면 더 수월하게 공부할 수 있거든요~ (어차피 둘 다 알아야 해요</p>
   </div>
-
+  <div class="fresh">FRESH ARTICLES</div>
 <section class="bodycopy">
-    <div class="fresh">FRESH ARTICLES</div>
-    <div class="centerflex">
   <div class="centercanvas">canvas로 경이로운 소문 융의 땅 만들기  <p>2021-09-05</p>  <div id="centercopy">
   1월에 유튜브에 올렸던 영상인데, 글이 조금 늦었네요~
   Canvas를 이용해 드라마 경이로운 소문의 융의 땅을 만들어 봅니다. 융의 땅이 뭔지 모르셔도 그냥 저런 빛 움직임을 만드는 강의라고 생각하고 보시면 됩니다.
 
   외부 라이브러리를 사용하지 않고 오로지 Canvas 자체의 API만 가지고 진행하니, 평소 Canvas로 애니메이션과 그래픽 구현을 어떤 식으로 하는지 궁금하셨던 분들은 보시면 좋을 것 같아요</div></div>
 
-    <div class="centercssgrid">개발을 시작하고, 강의를 하게 된 이야기  <p>2021-09-18</p> <div id="centercopy">
+    <div class="centercssgrid">개발을 시작하고, 강의를 하게 된 이야기  <p>2021-09-18</p><div id="centercopy">
 
     이 튜토리얼은 “차세대 CSS 레이아웃” 시리즈의 두번째 포스트입니다.
-    혹시 CSS Flex에 대해 잘 모르신다면, 첫번째 포스트 “이번에야말로 CSS Flex를 익혀보자”를 먼저 읽고 오시는걸 추천드립니다! Flex랑 Grid가 겹치는 부분이 좀 있어서, Flex를 알면 더 수월하게 공부할 수 있거든요~ (어차피 둘 다 알아야 해요</div></div></div>
-    <section class="onemin-coding-title">
+    혹시 CSS Flex에 대해 잘 모르신다면, 첫번째 포스트 “이번에야말로 CSS Flex를 익혀보자”를 먼저 읽고 오시는걸 추천드립니다! Flex랑 Grid가 겹치는 부분이 좀 있어서, Flex를 알면 더 수월하게 공부할 수 있거든요~ (어차피 둘 다 알아야 해요</div></div>
 
-      <h5>1분코딩 →</h5>
-      </section>
-
-<div class="onemin_flex">
-
-<figure class="onemin_caption">
-<div class="img" style="background-image:url('웹페이지 가로세로인식.jpg');"></div>
-<div class="img_info">웹페이지 가로 모드/세로 모드 인식하기</div>
-</figure>
-
-<figure class="onemin_caption">
-<div class="img" style="background-image:url('css로 다크모드.jpg');"></div>
-<div class="img_info">CSS로 다크 모드 인식하기</div>
-</figure>
-
-<figure class="onemin_caption">
-<div class="img" style="background-image:url('css 텍스트 반전효과.jpg');"></div>
-<div class="img_info">CSS 텍스트 반전 효과</div>
-</figure>
-
-<figure class="onemin_caption">
-<div class="img" style="background-image:url('css로 흑백이미지.jpg');"></div>
-<div class="img_info">CSS로 흑백이미지 만들기</div>
-</figure>
-
-<figure class="onemin_caption">
-<div class="img" style="background-image:url('창크기에 딱맞게.jpg');"></div>
-<div class="img_info">창 크기에 딱 맞게 유튜브 영상 넣기</div>
-</figure>
-
-    </div>
-</section>
-
-
-
+  </section>
+<div class="omcd">1분코딩 →</div>
   <figure  class="poster"><img src="poster-online.jpg" width=100%; id="wanted">
     <figcaption class="postercap">Oh! 감탄사가 나오는 역동적인 인터랙티브 웹사이트 만들기 온라인 강좌 시리즈. 수강평을 확인해보세요 :)</figcaption>
   </figure>
