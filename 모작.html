@@ -188,7 +188,7 @@ letter-spacing: 3px;
     text-align: left;
     line-height: 1;
 }
-.coffee{
+#coffee{
   display: flex;
   align-items: center;
 justify-content: center;
@@ -203,7 +203,7 @@ justify-content: center;
   display: inline;
   vertical-align: middle;
   margin-right:5px;
-  width:7%;
+  width:18px;
 }
 
 P{
@@ -348,6 +348,11 @@ padding-bottom: 100%
   padding:0 1rem;
   line-height: 1.4;
 }
+.coffeepic2{
+  display:none;
+  text-align: right;
+}
+
 
 
 @media(max-width:1600px){
@@ -597,19 +602,35 @@ margin-right:0 -1rem;
 .tuto{
   display: none;
 }
-.coffee{
-  display: none;
+#coffee{
+    display: none;
+
 }
 .forall{
   display: none;
 }
 .headerflex{
   border-top: double 5px grey;
-  display: flex;
-  grid-column: 1/6;
+  display: inline;
+    text-align: center;
+    grid-column: 1/6;
     grid-row: 2/3;
-    justify-content: center;
-    align-items: center;
+}
+.coffeepicc{
+display: block;
+  align-self: center;
+  grid-column: 5/6;
+  grid-row: 2/3;
+  text-align: right;
+margin-top: 10px;
+margin-right: 10px;
+}
+
+.header{
+  display: inline;
+  grid-column: 1/2;
+  grid-row: 2/3;
+
 }
 
 .poster{
@@ -683,6 +704,10 @@ text-overflow: ellipsis;
   width:100%;
 }
 
+.coffee_copy{
+  display: none;
+}
+
 }
 
 </style>
@@ -690,6 +715,7 @@ text-overflow: ellipsis;
 <body>
 
   <div class="container">
+  <div class="coffeepicc"><img src="coffeepic.svg" width=18px; ></div>
 <div class="date">2021-09-18</div>
 <div class="headerflex">
   <div class="forall">
@@ -699,9 +725,9 @@ text-overflow: ellipsis;
   <div class="cp2">PEAPLE</div>
   </div>
     <div class="header">1분코딩</div>
-    <div class="coffee">
+    <div id="coffee">
     <img src="coffeepic.svg" width=15px; class="coffeepic">
-    <div>BUY ME A COFFEE</div>
+    <div class="coffee_copy">BUY ME A COFFEE</div>
 
   </div>
 
